@@ -1,8 +1,8 @@
 {
-  "name": "CPAtake",
-  "productName": "CPAtake",
-  "version": "5.0.1",
-  "description": "Experience all Club Penguin eras in one game, join Club Penguin Atake now!",
+  "name": "CelestialPenguin",
+  "productName": "Celestial Penguin",
+  "version": "1.0.0",
+  "description": "Join the fun on Celestial Penguin! Enjoy all new mascots, parties and more!",
   "main": "src/main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -49,8 +49,8 @@
         }, {
           "name": "@electron-forge/maker-flatpak",
           "config": {
-            "genericName": "Club Penguin Atake App",
-            "productName": "Club Penguin Atake App",
+            "genericName": "Celestial Penguin App",
+            "productName": "Celestial Penguin App",
             "categories": [
               "Game"
             ],
@@ -93,12 +93,12 @@
         ]
       }
     ],
-    "appId": "pl.moonlightstudios.cpatakeapp",
-    "productName": "Club Penguin Atake App",
+    "appId": "pl.moonlightstudios.celestialpenguinapp",
+    "productName": "Celestial Penguin App",
     "copyright": "Copyright © 2023 ${author}",
     "mac": {
       "icon": "./lib/icons/icon.icns",
-      "category": "lib.games.cpatake"
+      "category": "lib.games.celestialpenguin"
     },
     "win": {
       "icon": "./lib/icons/icon.png"
@@ -107,9 +107,9 @@
       "buildResources": "lib"
     },
     "protocols": [{
-        "name": "cpatake",
+        "name": "celestial",
         "schemes": [
-          "cpatake"
+          "celestial"
         ]
       }
     ]

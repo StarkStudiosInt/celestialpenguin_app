@@ -2,29 +2,25 @@ const { app, BrowserWindow, autoUpdater } = require("electron");
 const discord_integration = require('./integrations/discord');
 const path = require("path");
 
+function clearCache() {
+  if (mainWindow !== null) {mainWindow.webContents.session.clearCache();}
+}
+
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require("electron-squirrel-startup")) app.quit();
 
 // Check for updates except for macOS
-if (process.platform != "darwin") require("update-electron-app")({ repo: "MoonlightStudiosInt/cpatake_app" });
+if (process.platform != "darwin") require("update-electron-app")({ repo: "StarkStudiosInt/celestialpenguin_app" });
 
 const ALLOWED_ORIGINS = [
-  "https://butterfly.cpatake.boo",
-  "https://as1.cpatake.boo",
-  "https://as2.cpatake.boo",
-  "https://as3.cpatake.boo",
-  "https://ep.cpatake.boo",
-  "https://pc.cpatake.boo",
-  "https://pc3.cpatake.boo",
-  "https://tv.cpatake.boo",
-  "https://l.tv.cpatake.boo",
-  "https://www.cpatake.boo",
-  "https://cpatake.boo",
+  "https://celestialpenguin.net",
+  "https://www.celestialpenguin.net",
+  "https://play.celestialpenguin.net",
+  "https://media.celestialpenguin.net",
   "https://www.fullmoon.dev",
   "https://support.fullmoon.dev",
   "https://status.fullmoon.dev",
   "https://link.fullmoon.dev",
-  "https://pqa.cpatake.tk",
   "https://protected.fullmoon.dev",
 ];
 
@@ -90,9 +86,11 @@ const createWindow = () => {
 
   mainWindow.webContents.session.clearHostResolverCache();
 
+  mainWindow.webContents.session.clearCache()
+
   new Promise((resolve) =>
     setTimeout(() => {
-      mainWindow.loadURL("https://butterfly.cpatake.boo/start/5.0.1");
+      mainWindow.loadURL("https://play.celestialpenguin.net/dynamichome");
       resolve();
     }, 5000)
   );
@@ -108,7 +106,7 @@ const launchMain = () => {
       mainWindow.focus();
     }
   });
-  app.setAsDefaultProtocolClient("cpatake");
+  app.setAsDefaultProtocolClient("celestial");
 
   app.whenReady().then(() => {
     createWindow();

@@ -1,14 +1,14 @@
 const RPC = require('discord-rpc');
 const rpcClient = new RPC.Client({ transport: 'ipc' });
-const APPLICATION_ID = '1014618385507692635';
+const APPLICATION_ID = '914151035705122826';
 RPC.register(APPLICATION_ID);
 
 function onRpcReady() {
     rpcClient.setActivity({
-        state: "Discovering the island",
-        details: "www.cpatake.boo",
+        state: "Meeting new friends",
+        details: "www.celestialpenguin.net",
         startTimestamp: Date.now(),
-        largeImageKey: "logoicon-monarch",
+        largeImageKey: "celsat",
         instance: true,
     });
 }
