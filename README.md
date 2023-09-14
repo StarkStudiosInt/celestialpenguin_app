@@ -7,4 +7,4 @@ This application is based on the [New Club Penguin application](https://github.c
 ✓ = older version, still supported<br>
 ❤️ = latest version, supported<br>
 
-❤️ 1.0.0 - September 13, 2023 (initial release)
+❤️ 1.0.0 - September 14, 2023 (initial release)
