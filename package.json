@@ -75,8 +75,8 @@
           "name": "@electron-forge/publisher-github",
           "config": {
             "repository": {
-              "owner": "MoonlightStudiosInt",
-              "name": "cpatake_app"
+              "owner": "StarkStudiosInt",
+              "name": "celestialpenguin_app"
             },
             "prerelease": false
           }
