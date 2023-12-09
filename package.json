@@ -1,7 +1,7 @@
 {
   "name": "CelestialPenguin",
   "productName": "CelestialPenguin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Join the fun on Celestial Penguin! Enjoy all new mascots, parties and more!",
   "main": "src/main.js",
   "scripts": {
@@ -35,11 +35,6 @@
           "platforms": [
             "darwin"
           ]
-        }, {
-          "name": "@electron-forge/maker-dmg",
-          "config": {
-            "format": "ULFO"
-          }
         }, {
           "name": "@electron-forge/maker-deb",
           "config": {}
@@ -127,7 +122,6 @@
     "@electron-forge/cli": "^6.0.0-beta.54",
     "@electron-forge/maker-appx": "^6.0.0-beta.54",
     "@electron-forge/maker-deb": "^6.0.0-beta.54",
-    "@electron-forge/maker-dmg": "^6.0.0-beta.54",
     "@electron-forge/maker-rpm": "^6.0.0-beta.54",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
     "@electron-forge/maker-flatpak": "^6.0.0-beta.64",
