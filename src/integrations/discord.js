@@ -5,7 +5,7 @@ RPC.register(APPLICATION_ID);
 
 function onRpcReady() {
     rpcClient.setActivity({
-        state: "Meeting new friends",
+        state: "Discovering the secrets of the Island",
         details: "www.celestialpenguin.net",
         startTimestamp: Date.now(),
         largeImageKey: "celsat",
