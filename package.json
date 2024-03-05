@@ -1,7 +1,7 @@
 {
   "name": "CelestialPenguin",
   "productName": "CelestialPenguin",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Join the fun on Celestial Penguin! Enjoy all new mascots, parties and more!",
   "main": "src/main.js",
   "scripts": {
