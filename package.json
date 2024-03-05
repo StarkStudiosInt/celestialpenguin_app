@@ -1,7 +1,7 @@
 {
   "name": "CelestialPenguin",
   "productName": "CelestialPenguin",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Join the fun on Celestial Penguin! Enjoy all new mascots, parties and more!",
   "main": "src/main.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
-  "author": "Moonlight Studios",
+  "author": "Fullmoon",
   "license": "MIT",
   "config": {
     "forge": {
@@ -26,7 +26,7 @@
           "name": "@electron-forge/maker-squirrel",
           "config": {
             "name": "moonlightstudios",
-            "authors": "Moonlight Studios",
+            "authors": "Fullmoon (formerly Moonlight Studios)",
             "loadingGif": "./src/assets/default-splash.gif",
             "setupIcon": "./lib/icons/icon.ico"
           }
@@ -70,7 +70,7 @@
           "name": "@electron-forge/publisher-github",
           "config": {
             "repository": {
-              "owner": "StarkStudiosInt",
+              "owner": "celestialpenguin",
               "name": "celestialpenguin_app"
             },
             "prerelease": false
@@ -90,7 +90,7 @@
     ],
     "appId": "pl.moonlightstudios.celestialpenguinapp",
     "productName": "Celestial Penguin App",
-    "copyright": "Copyright © 2023 ${author}",
+    "copyright": "Copyright © 2024 ${author}",
     "mac": {
       "icon": "./lib/icons/icon.icns",
       "category": "lib.games.celestialpenguin"

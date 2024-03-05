@@ -10,7 +10,7 @@ function clearCache() {
 if (require("electron-squirrel-startup")) app.quit();
 
 // Check for updates except for macOS
-if (process.platform != "darwin") require("update-electron-app")({ repo: "StarkStudiosInt/celestialpenguin_app" });
+if (process.platform != "darwin") require("update-electron-app")({ repo: "celestialpenguin/celestialpenguin_app" });
 
 const ALLOWED_ORIGINS = [
   "https://celestialpenguin.net",
